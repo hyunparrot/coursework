@@ -27,11 +27,12 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var UserPassword: EditText
     private lateinit var ShowId: TextView
     private lateinit var ShowPassword: TextView
-    //TextView와 TextView 차이점
+    //TextInputLayout과 TextView 차이점
 
     //TextView는 단순한 텍스트를 표시하는 데 사용되고
 
     // TextInputLayout은 사용자로부터의 입력을 받기 위한
+
     // 디자인적인 목적을 가진 입력 컨테이너이다
 
     //일반적으로 EditText를 포함하면서 사용된다.
@@ -98,15 +99,15 @@ class SignInActivity : AppCompatActivity() {
            //Toast.LENGTH_LONG은 약 3.5초 동안 표시
 
 
-            // 로그인 버튼을 누르면 HomeActivity가 실행됩니다. (Extra로 아이디를 넘겨줍니다.)
+            // 로그인 버튼을 누르면 HomeActivity가 실행된다. (Extra로 아이디를 넘겨준다.)
 
             //해당 코드는 사용자가 제공한 아이디(username) 또는 비밀번호(password)가 비어있는지를 확인하는 조건문
 
             // 여기서 사용된 TextUtils.isEmpty(...)는 안드로이드에서 제공되는 유틸리티 메서드로, 문자열이 비어있는지 여부를 검사하는 데 사용된다.
 
-            // TextUtils.isEmpty(username): 사용자가 제공한 아이디(username)가 비어있는지 여부를 검사합니다.
+            // TextUtils.isEmpty(username): 사용자가 제공한 아이디(username)가 비어있는지 여부를 검사한다.
 
-            // TextUtils.isEmpty(password): 사용자가 제공한 비밀번호(password)가 비어있는지 여부를 검사합니다.
+            // TextUtils.isEmpty(password): 사용자가 제공한 비밀번호(password)가 비어있는지 여부를 검사한다.
 
             // || 연산자를 사용하여 두 조건 중 하나라도 참이면 (아이디가 비어있거나 비밀번호가 비어있으면), 조건문은 참이 된다.
 
